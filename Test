@@ -1,0 +1,14 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("title of gui", "Ocean")
+local Tab = Window:NewTab("ur tab like room")
+local Section = Tab:NewSection("ur section name but it doesn't do anything")
+Section:NewButton("hitbox", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-hitbox-expander-6698"))()
+    print("Clicked")
+end)
+
+Section:NewButton("fov 120", "ButtonInfo", function()
+    local FOV = 120
+game.Workspace.Camera.FieldOfView = 120
+    print("Clicked")
+end)
